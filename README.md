@@ -1,6 +1,4 @@
-# Docksal powered Drupal 8 Installation
-
-This is a sample vanilla Drupal 8 installation pre-configured for use with Docksal.  
+# Jeff Wax Portfolio (created via Docksal D8 Baseplate)
 
 Features:
 
@@ -56,10 +54,3 @@ Some common tasks that can be handled by the init script (an other [custom comma
 - compile Sass
 - run DB updates, revert features, clear caches, etc.
 - enable/disable modules, update variables values
-
-
-## Security notice
-
-This repo is intended for quick start demos and includes a hardcoded value for `hash_salt` in `settings.php`.  
-If you are basing your project code base on this repo, make sure you regenerate and update the `hash_salt` value.  
-A new value can be generated with `drush ev '$hash = Drupal\Component\Utility\Crypt::randomBytesBase64(55); print $hash . "\n";'` 
