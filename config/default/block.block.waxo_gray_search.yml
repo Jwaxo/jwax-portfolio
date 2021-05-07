@@ -1,17 +1,17 @@
-uuid: fdcd2a19-4cb8-48f1-9c89-0d3eb58968d7
+uuid: 8fe7dd33-b5cf-45f5-bedd-296cce10de5c
 langcode: en
 status: true
 dependencies:
   module:
     - search
   theme:
-    - bartik
+    - waxo_gray
 _core:
   default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
-id: bartik_search
-theme: bartik
-region: sidebar_first
-weight: -1
+id: waxo_gray_search
+theme: waxo_gray
+region: disabled
+weight: -6
 provider: null
 plugin: search_form_block
 settings:

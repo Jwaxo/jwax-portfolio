@@ -1,17 +1,17 @@
-uuid: 3895bc29-d00a-41a2-a1c6-04d8df2ecc7e
+uuid: 2c20cf07-b669-4838-afd8-75168e52423a
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - waxo_gray
 _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: bartik_branding
-theme: bartik
-region: header
-weight: 0
+id: waxo_gray_branding
+theme: waxo_gray
+region: footer_second
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

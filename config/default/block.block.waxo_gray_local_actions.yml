@@ -1,15 +1,15 @@
-uuid: 3de7e1ff-def4-4ce1-9a92-274cee470989
+uuid: e7f5f6f9-a809-499c-8890-416ac4393986
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - waxo_gray
 _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: bartik_local_actions
-theme: bartik
+id: waxo_gray_local_actions
+theme: waxo_gray
 region: content
-weight: -20
+weight: -6
 provider: null
 plugin: local_actions_block
 settings:

@@ -1,4 +1,4 @@
-uuid: 09b55860-f90f-4c2d-85d6-ac6c0043aa8a
+uuid: b6183268-b471-4efd-92fa-cc353f053fb4
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - waxo_gray
 _core:
   default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
-id: bartik_account_menu
-theme: bartik
-region: secondary_menu
-weight: 0
+id: waxo_gray_account_menu
+theme: waxo_gray
+region: disabled
+weight: -3
 provider: null
 plugin: 'system_menu_block:account'
 settings:

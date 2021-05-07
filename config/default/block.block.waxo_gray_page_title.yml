@@ -1,13 +1,13 @@
-uuid: 5e8e16fa-15df-428a-9549-63a8f46847a3
+uuid: 14bcd966-2310-423c-adf5-27740358dbae
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - waxo_gray
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
-id: bartik_page_title
-theme: bartik
+id: waxo_gray_page_title
+theme: waxo_gray
 region: content
 weight: -50
 provider: null

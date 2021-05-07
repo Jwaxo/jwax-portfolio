@@ -1,4 +1,4 @@
-uuid: ce75ff0f-ea58-46f5-ab39-cae78e99fb60
+uuid: fa8da7a7-75e6-47db-87c3-5fcbc9832981
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - waxo_gray
 _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
-id: bartik_footer
-theme: bartik
-region: footer_fifth
-weight: 0
+id: waxo_gray_footer
+theme: waxo_gray
+region: footer_first
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

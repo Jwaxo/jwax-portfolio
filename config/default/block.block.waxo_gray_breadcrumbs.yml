@@ -1,15 +1,15 @@
-uuid: 6dd4f931-a2d9-4c63-9557-c6547c5a1d7f
+uuid: 4d1afd12-3acc-495e-9d90-04acb8f95f52
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - waxo_gray
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
+id: waxo_gray_breadcrumbs
+theme: waxo_gray
 region: breadcrumb
 weight: 0
 provider: null

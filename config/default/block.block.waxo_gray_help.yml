@@ -1,17 +1,17 @@
-uuid: b1233b72-14bb-4e0e-8980-b06588b9c501
+uuid: 4ca1115e-3371-4ed2-a305-64d53dfe0d6e
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - help
   theme:
-    - bartik
+    - waxo_gray
 _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
-id: bartik_help
-theme: bartik
-region: content
-weight: -30
+id: waxo_gray_help
+theme: waxo_gray
+region: disabled
+weight: -2
 provider: null
 plugin: help_block
 settings:
