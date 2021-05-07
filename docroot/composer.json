@@ -20,6 +20,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
+        "drupal/layout_builder_modal": "^1.1",
         "drush/drush": "^10.4"
     },
     "conflict": {
