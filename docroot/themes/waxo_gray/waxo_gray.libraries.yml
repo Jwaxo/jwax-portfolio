@@ -1,0 +1,15 @@
+# Define theme library CSS and JS assets along with dependent libraries.
+# The paths below are set to default DRUPAL_DIST variable. If you change the
+# DRUPAL_DIST path, update here.
+core:
+  css:
+    theme:
+      css/app.css:
+        minified: true
+  js:
+    js/app.js:
+      preprocess: false
+  # See all in Drupal's `core/core.libraries.yml`
+  dependencies:
+    - core/drupal
+    - core/drupalSettings

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+## Runs npm commands within the build container.
+##
+## Usage: fin npm [command]
+
+# This runs within the CLI container, so all tools are available.
+#: exec_target = cli
+
+set -e
+
+npm "$@"

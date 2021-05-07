@@ -1,0 +1,26 @@
+name: Wax Gray
+type: theme
+description: 'A Jeff Wax custom theme with minimal theming so I do not make something ugly.'
+package: Core
+# version: VERSION
+core: 8.x
+
+ckeditor_stylesheets:
+  - css/ckeditor/elements.css
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  content: Content
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+
+# Information added by Drupal.org packaging script on 2021-01-20
+version: '8.9.13'
+project: 'drupal'
+datestamp: 1611162326
