@@ -1,0 +1,20 @@
+/**
+ * Theme-wide settings.
+ */
+
+$widths: (
+  desktop: 1080px,
+  mobile: 760px,
+);
+$main-gutter: 20px;
+
+$colors: (
+  gray: (
+    light: #ddd,
+    medium: #b6b6b6,
+    dark: #222,
+  ),
+);
+
+$body-font: $nobile-normal;
+$headline-font: $lato-normal;

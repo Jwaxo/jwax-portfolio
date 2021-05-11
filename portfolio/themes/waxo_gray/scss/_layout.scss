@@ -1,0 +1,21 @@
+/**
+ * Styles defining basic layout, including Layout Builder specs.
+ */
+
+header {
+  background-color: palette($colors, gray, medium);
+}
+
+main {
+  background-color: palette($colors, gray, light);
+}
+
+footer {
+  background-color: palette($colors, gray, dark);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: map_get($widths, desktop);
+  padding: 0 $main-gutter;
+}
