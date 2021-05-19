@@ -8,6 +8,7 @@ header {
 
 main {
   background-color: palette($colors, gray, light);
+  min-height: 100vh; // Quick solution to make the footer stick to bottom.
 }
 
 footer {
