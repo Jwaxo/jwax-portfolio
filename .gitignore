@@ -1,6 +1,9 @@
 # Ignore binaries.
 /bin
 
+# Configs
+php.ini
+
 .idea/
 docker-compose.yml
 portfolio/sites/*/settings.local.php

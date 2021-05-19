@@ -1,0 +1,44 @@
+/**
+ * Theme-wide settings.
+ */
+
+$widths: (
+  desktop: 1080px,
+  mobile: 760px,
+);
+$main-gutter: 20px;
+
+$body-font: $nobile-normal;
+$headline-font: $lato-normal;
+
+$colors: (
+  gray: (
+    light: #ddd,
+    medium: #b6b6b6,
+    dark: #222,
+  ),
+  blue: (
+    light: #6699ff,
+    medium: #3366cc,
+    dark: #003399,
+  ),
+);
+
+$tabs: (
+  tab: (
+    padding: 5px,
+    margin: 0 5px,
+  ),
+  background: (
+    default: palette($colors, gray, light),
+    hover: palette($colors, gray, medium),
+  ),
+  border: (
+    color: palette($colors, gray, dark),
+    width: 1px,
+  ),
+  link: (
+    active: palette($colors, gray, dark),
+    inactive: palette($colors, blue, medium),
+  ),
+);

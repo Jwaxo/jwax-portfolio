@@ -1,0 +1,23 @@
+/**
+ * Styles defining basic layout, including Layout Builder specs.
+ */
+
+header {
+  background-color: palette($colors, gray, medium);
+}
+
+main {
+  background-color: palette($colors, gray, light);
+  min-height: 100vh; // Quick solution to make the footer stick to bottom.
+}
+
+footer {
+  background-color: palette($colors, gray, dark);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: map_get($widths, desktop);
+  overflow: hidden;
+  padding: 0 $main-gutter;
+}

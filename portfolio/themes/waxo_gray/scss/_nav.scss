@@ -1,0 +1,41 @@
+/**
+ * Navigation styles.
+ */
+nav.nav--menu {
+  overflow: hidden;
+}
+
+ul.menu,
+ol.menu {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+ol.menu.menu--breadcrumbs {
+  position: relative;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.menu.menu--local {
+  @include tabs;
+}
+
+ul.tabs,
+li.tabs {
+  @include tabs;
+}

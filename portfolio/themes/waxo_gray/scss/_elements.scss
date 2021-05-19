@@ -1,0 +1,33 @@
+/**
+ * Basic element styling.
+ */
+
+body {
+  background: white;
+  font-family: $body-font;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headline-font;
+  font-weight: 300;
+
+  strong {
+    font-weight: 400;
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+a,
+a:visited,
+a:active {
+  color: palette($colors, blue, medium);
+
+  &:hover {
+    color: palette($colors, blue, light);
+  }
+}
