@@ -14,4 +14,4 @@
  * @see template_preprocess_menu_local_task()
  */
 #}
-<li{{ attributes.addClass("menu-item menu-item--local") }}>{{ link }}</li>
+<li{{ attributes.addClass("menu-item menu-item--local" ~ (is_active ? ' is-active' : '')) }}>{{ link }}</li>

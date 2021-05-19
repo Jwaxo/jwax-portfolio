@@ -17,5 +17,6 @@ footer {
 .container {
   margin: 0 auto;
   max-width: map_get($widths, desktop);
+  overflow: hidden;
   padding: 0 $main-gutter;
 }

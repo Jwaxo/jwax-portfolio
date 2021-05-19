@@ -1,11 +1,14 @@
 /**
  * Navigation styles.
  */
+nav.nav--menu {
+  overflow: hidden;
+}
 
 ul.menu,
 ol.menu {
   list-style: none;
-  margin: 0;
+  margin: 16px 0;
   padding: 0;
 
   li {
@@ -13,4 +16,17 @@ ol.menu {
     margin: 0;
     padding: 0;
   }
+}
+
+ol.menu.menu--breadcrumbs {
+  position: relative;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.menu.menu--local {
+  @include tabs;
 }
