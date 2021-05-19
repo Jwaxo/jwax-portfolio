@@ -9,3 +9,5 @@ docker-compose.yml
 portfolio/sites/*/settings.local.php
 portfolio/sites/*/files
 portfolio/vendor/*
+portfolio/modules/contrib/*
+portfolio/core/*
