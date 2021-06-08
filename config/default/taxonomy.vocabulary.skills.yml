@@ -1,0 +1,8 @@
+uuid: f3249db7-870a-4576-9594-8013f2380065
+langcode: en
+status: true
+dependencies: {  }
+name: Skills
+vid: skills
+description: 'Skills developed in private study or on a project.'
+weight: 0
