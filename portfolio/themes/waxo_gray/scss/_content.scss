@@ -1,0 +1,11 @@
+/**
+ * Styles defining content, such as nodes and taxonomy terms.
+ */
+
+.node--full {
+  background-color: palette($colors, gray, light);
+
+  .container {
+    padding: $main-gutter;
+  }
+}
