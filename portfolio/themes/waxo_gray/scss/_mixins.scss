@@ -38,3 +38,17 @@
     }
   }
 }
+
+// Responsive sizes here.
+
+@mixin size-mobile {
+  @media (min-width: #{map-get($widths, mobile)}) {
+    @content;
+  }
+}
+
+@mixin size-desktop {
+  @media (min-width: #{map-get($widths, desktop)}) {
+    @content;
+  }
+}
