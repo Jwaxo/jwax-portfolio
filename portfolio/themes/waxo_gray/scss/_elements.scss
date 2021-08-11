@@ -1,9 +1,14 @@
 /**
  * Basic element styling.
  */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
 
 body {
-  background: white;
+  background: transparent;
   margin: 0;
 }
 

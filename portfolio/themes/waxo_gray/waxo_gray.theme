@@ -5,6 +5,8 @@
  * Functions to support theming in the Waxo Gray theme.
  */
 
+use Drupal\Core\Url;
+
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
  *
@@ -14,3 +16,58 @@ function waxo_gray_preprocess_html(&$variables) {
 
 }
 
+/**
+ * Implements hook_entity_display_build_alter().
+ */
+function waxo_gray_entity_display_build_alter(&$build, $context) {
+  $entity = $context['entity'];
+
+  // Checks if the entity being displayed is a image media entity in the "full" display mode.
+  // For other display modes it's OK for us to process the GIF and lose the animation.
+  if ($entity->getEntityTypeId() == 'media' && $entity->bundle() == 'image' && $context['view_mode'] == 'full') {
+    /** @var \Drupal\media_entity\Entity\Media $entity */
+    if (isset($build['image'][0])) {
+      $mimetype = $mimetype = $build['image'][0]['#item']->entity->filemime->value;
+      $image_style = $build['image'][0]['#image_style'];
+      if ($mimetype == 'image/gif' && !empty($image_style)) {
+        $build['image'][0]['#image_style'] = '';
+      }
+    }
+  }
+}
+
+/**
+ * Implements template_preprocess_node().
+ */
+function waxo_gray_preprocess_node(&$variables) {
+  $node = $variables['elements']['#node'];
+  $bundle = $node->getType();
+
+  $variables['attributes']['class'][] = 'node--' . $bundle;
+  $variables['attributes']['class'][] = 'node--' . $variables['elements']['#view_mode'];
+  $variables['attributes']['class'][] = 'node--' . $bundle . '--' . $variables['elements']['#view_mode'];
+}
+
+/**
+ * Implements template_preprocess_field().
+ */
+function waxo_gray_preprocess_field(&$variables) {
+  $field_name = $variables['element']['#field_name'];
+  $formatter = $variables['element']['#formatter'];
+  $bundle = $variables['element']['#bundle'];
+  $entity = $variables['element']['#object'];
+
+  if ($field_name === 'title' && $bundle === 'page') {
+    $image = [];
+    $image_media = $entity->get('field_image');
+
+    $image['url'] = file_create_url($image_media->entity->getFileUri());
+
+    if (isset($image['url'])) {
+
+      $image['alt'] = $image_media->first()->get('alt')->getValue();
+    }
+
+    $variables['image'] = $image;
+  }
+}

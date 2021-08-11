@@ -1,0 +1,24 @@
+/**
+ * Drupal field and field component styling.
+ */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: map-get($heights, hero);
+}
+
+.hero--title {
+  color: palette($colors, gray, light);
+  z-index: 1;
+}
+
+.hero--image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -999;
+}

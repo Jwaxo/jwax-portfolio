@@ -7,8 +7,8 @@ header {
 }
 
 main {
-  background-color: palette($colors, gray, light);
   min-height: 100vh; // Quick solution to make the footer stick to bottom.
+  overflow-x: hidden;
 }
 
 footer {
@@ -18,6 +18,17 @@ footer {
 .container {
   margin: 0 auto;
   max-width: map_get($widths, desktop);
-  overflow: hidden;
+}
+
+.container-breakout {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+
+.layout-content {
   padding: 0 $main-gutter;
 }
