@@ -92,9 +92,9 @@ third_party_settings:
               label_display: '0'
               formatter:
                 label: above
-                type: entity_reference_label
+                type: entity_reference_entity_view
                 settings:
-                  link: true
+                  view_mode: token
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
@@ -105,16 +105,19 @@ third_party_settings:
             uuid: fc974144-e9bc-4595-94ec-b05c57bf7f75
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:article:field_skills_used'
+              label: 'Skills Used'
+              provider: layout_builder
+              label_display: '0'
               formatter:
                 label: above
+                type: entity_reference_entity_view
                 settings:
-                  link: true
+                  view_mode: token
                 third_party_settings: {  }
-                type: entity_reference_label
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 9
           0f15d818-2e1a-4181-8cb7-1e6f8469b495:

@@ -11,7 +11,7 @@ _core:
 id: waxo_gray_breadcrumbs
 theme: waxo_gray
 region: disabled
-weight: -1
+weight: -2
 provider: null
 plugin: system_breadcrumb_block
 settings:
