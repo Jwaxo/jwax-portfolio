@@ -12,6 +12,19 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jackmoore/zoom",
+                "version": "1.7.21",
+                "type":"drupal-library-zoom",
+                "source": {
+                    "url": "https://github.com/jackmoore/zoom.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         }
     ],
     "require": {
@@ -21,8 +34,10 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
+        "drupal/imagefieldzoom": "^1.0",
         "drupal/layout_builder_modal": "^1.1",
-        "drush/drush": "^10.4"
+        "drush/drush": "^10.4",
+        "jackmoore/zoom": "^1.7"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -44,6 +59,9 @@
             ],
             "libraries/{$name}": [
                 "type:drupal-library"
+            ],
+            "libraries/jquery_zoom/js": [
+                "type:drupal-library-zoom"
             ],
             "modules/contrib/{$name}": [
                 "type:drupal-module"

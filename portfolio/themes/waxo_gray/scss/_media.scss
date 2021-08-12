@@ -1,0 +1,14 @@
+/**
+ * Styles defining media, such as Image media.
+ */
+
+.image-zoom-container {
+  background-color: rgba(0,0,0,.2);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+.image-zoom {
+  overflow: visible !important;
+}

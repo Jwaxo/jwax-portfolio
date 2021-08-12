@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_clientname
     - field.field.node.article.field_color
-    - field.field.node.article.field_image
+    - field.field.node.article.field_media_images
     - field.field.node.article.field_skills_used
     - field.field.node.article.field_source_status
     - field.field.node.article.field_source_url
@@ -46,7 +46,7 @@ third_party_settings:
                 third_party_settings: {  }
                 label: hidden
             additional: {  }
-            weight: 5
+            weight: 7
           a4ba698a-fc0d-4cc7-9993-88d5adfee092:
             uuid: a4ba698a-fc0d-4cc7-9993-88d5adfee092
             region: content
@@ -100,24 +100,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 7
-          dc9bf0ed-8056-4a83-ba47-242d23a66580:
-            uuid: dc9bf0ed-8056-4a83-ba47-242d23a66580
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:article:field_image'
-              formatter:
-                type: image
-                settings:
-                  image_style: large
-                  image_link: ''
-                third_party_settings: {  }
-                label: hidden
-            additional: {  }
-            weight: 6
+            weight: 8
           fc974144-e9bc-4595-94ec-b05c57bf7f75:
             uuid: fc974144-e9bc-4595-94ec-b05c57bf7f75
             region: content
@@ -133,7 +116,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 8
+            weight: 9
           0f15d818-2e1a-4181-8cb7-1e6f8469b495:
             uuid: 0f15d818-2e1a-4181-8cb7-1e6f8469b495
             region: content
@@ -153,6 +136,25 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 2
+          e0a6787a-de7a-46a1-8aa8-64c72cc944e0:
+            uuid: e0a6787a-de7a-46a1-8aa8-64c72cc944e0
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_media_images'
+              label: Images
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 6
         third_party_settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
@@ -184,15 +186,15 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_image:
-    type: image
-    weight: -1
-    region: content
+  field_media_images:
+    type: entity_reference_entity_view
+    weight: 107
+    label: above
     settings:
-      image_style: large
-      image_link: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    label: hidden
+    region: content
   field_skills_used:
     weight: 105
     label: above
