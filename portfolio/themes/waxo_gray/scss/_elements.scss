@@ -29,11 +29,11 @@ body {
   }
 
   h1 {
-    font-size: 60px;
+    font-size: map-get($font-size, billboard);
   }
 
   h2 {
-    font-size: 40px;
+    font-size: map-get($font-size, giant);
   }
 
   strong {

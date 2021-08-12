@@ -43,7 +43,7 @@
 
   a.node-title {
     color: palette($colors, white, true);
-    font-size: 30px;
+    font-size: map-get($font-size, huge);
     text-decoration: none;
     text-shadow: 0 0 5px palette($colors, black, true);
   }
@@ -51,4 +51,17 @@
 
 .field--title {
   text-align: center;
+}
+
+.field--taxonomy {
+  margin-top: 30px;
+
+  .field-label {
+    margin-bottom: 15px;
+  }
+
+  .field-value {
+    font-size: map-get($font-size, big);
+    margin-right: 20px;
+  }
 }

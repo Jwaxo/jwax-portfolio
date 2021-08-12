@@ -26,7 +26,7 @@
 
 .field--field_caption {
   background-color: palette($colors, white, true);
-  font-size: 12px;
+  font-size: map-get($font-size, small);
   overflow: hidden;
   padding: 15px;
 
