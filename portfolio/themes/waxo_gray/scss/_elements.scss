@@ -49,4 +49,19 @@ body {
       color: palette($colors, blue, light);
     }
   }
+
+  dt, dd {
+    display: inline-block;
+  }
+
+  dt {
+    font-weight: bold;
+    &:after {
+      content: ': '
+    }
+  }
+
+  dd {
+    margin-left: 0;
+  }
 }
