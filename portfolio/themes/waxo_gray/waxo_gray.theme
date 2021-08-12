@@ -5,6 +5,8 @@
  * Functions to support theming in the Waxo Gray theme.
  */
 
+use \Drupal\Component\Utility\Html;
+
 /**
  * Implements hook_theme_suggestions_field_alter().
  */
@@ -47,6 +49,20 @@ function waxo_gray_preprocess_node(&$variables) {
   $variables['attributes']['class'][] = 'node--' . $bundle;
   $variables['attributes']['class'][] = 'node--' . $variables['elements']['#view_mode'];
   $variables['attributes']['class'][] = 'node--' . $bundle . '--' . $variables['elements']['#view_mode'];
+}
+
+/**
+ * Implements template_preprocess_block().
+ */
+function waxo_gray_preprocess_block(&$variables) {
+  if (isset($variables['content']['#title'])) {
+    if (!isset($variables['title_attributes']['id'])) {
+      $variables['title_attributes']['id'] = Html::cleanCSSIdentifier($variables['content']['#title']);
+    }
+  }
+  elseif (isset($variables['content']['#display_id'])) {
+    $variables['title_attributes']['id'] = $variables['content']['#display_id'];
+  }
 }
 
 /**
