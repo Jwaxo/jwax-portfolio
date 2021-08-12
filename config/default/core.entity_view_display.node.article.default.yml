@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_clientname
+    - field.field.node.article.field_color
     - field.field.node.article.field_image
     - field.field.node.article.field_skills_used
     - field.field.node.article.field_source_status
@@ -45,7 +46,7 @@ third_party_settings:
                 third_party_settings: {  }
                 label: hidden
             additional: {  }
-            weight: 4
+            weight: 5
           a4ba698a-fc0d-4cc7-9993-88d5adfee092:
             uuid: a4ba698a-fc0d-4cc7-9993-88d5adfee092
             region: content
@@ -60,7 +61,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: list_default
             additional: {  }
-            weight: 2
+            weight: 3
           11ea9ab8-0352-4e45-bc08-1f9a9cf88e9b:
             uuid: 11ea9ab8-0352-4e45-bc08-1f9a9cf88e9b
             region: content
@@ -80,7 +81,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: link
             additional: {  }
-            weight: 3
+            weight: 4
           dcc8ad09-7293-4f52-9439-ce5053fed751:
             uuid: dcc8ad09-7293-4f52-9439-ce5053fed751
             region: content
@@ -88,9 +89,9 @@ third_party_settings:
               id: 'field_block:node:article:field_tags'
               label: 'Filed Under'
               provider: layout_builder
-              label_display: visible
+              label_display: '0'
               formatter:
-                label: hidden
+                label: above
                 type: entity_reference_label
                 settings:
                   link: true
@@ -98,38 +99,6 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
-            weight: 6
-          90c7e4d2-aff4-4168-9831-91c81b453e0f:
-            uuid: 90c7e4d2-aff4-4168-9831-91c81b453e0f
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:article:field_clientname'
-              formatter:
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-                type: string
-            additional: {  }
-            weight: 1
-          fc974144-e9bc-4595-94ec-b05c57bf7f75:
-            uuid: fc974144-e9bc-4595-94ec-b05c57bf7f75
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:article:field_skills_used'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
             additional: {  }
             weight: 7
           dc9bf0ed-8056-4a83-ba47-242d23a66580:
@@ -148,7 +117,42 @@ third_party_settings:
                 third_party_settings: {  }
                 label: hidden
             additional: {  }
-            weight: 5
+            weight: 6
+          fc974144-e9bc-4595-94ec-b05c57bf7f75:
+            uuid: fc974144-e9bc-4595-94ec-b05c57bf7f75
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_skills_used'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 8
+          0f15d818-2e1a-4181-8cb7-1e6f8469b495:
+            uuid: 0f15d818-2e1a-4181-8cb7-1e6f8469b495
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_clientname'
+              label: Client
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
@@ -166,6 +170,14 @@ content:
     label: hidden
   field_clientname:
     weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_color:
+    weight: 106
     label: above
     settings:
       link_to_entity: false
