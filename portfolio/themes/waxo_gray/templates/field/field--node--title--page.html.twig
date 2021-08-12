@@ -15,16 +15,20 @@
  * - field_name: The name of the field.
  * - field_type: The type of the field.
  * - label_display: The display settings for the label.
- * - image: The image from field_image attached to this node.
+ * - image: The image array from field_image attached to this node.
+ * - subtitle: Additional information about this page.
  *
  * @see field.html.twig
  */
 #}
 <div class="hero">
-  <h1{{ attributes.addClass('hero--title') }}>
-    {%- for item in items -%}
-      {{ item.content }}
-    {%- endfor -%}
-  </h1>
-  <img class="hero--image" src="{{ image.url }}" alt="{{ image.alt }}">
+  <div class="hero-inner">
+    <h1{{ attributes.addClass('hero-title') }}>
+      {%- for item in items -%}
+        {{ item.content }}
+      {%- endfor -%}
+    </h1>
+    {% if subtitle %}<p class="hero-subtitle">{{ subtitle }}</p>{% endif %}
+  </div>
+  {% if image %}<img class="hero-image" src="{{ image.url }}" alt="{{ image.alt }}">{% endif %}
 </div>

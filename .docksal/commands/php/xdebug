@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+## Toggles xdebug on|off.
+##
+## Usage: fin php/xdebug on|off
+## Prior to using you must enable Xdebug in your local settings and restart the
+## container:
+##
+## fin config set --env=local XDEBUG_ENABLED=1
+## fin restart
+##
+#: exec_target = cli
+
+set -e
+
+$(dirname $0)/ext xdebug $1

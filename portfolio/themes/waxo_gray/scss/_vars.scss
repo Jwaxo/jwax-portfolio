@@ -16,6 +16,9 @@ $body-font: $nobile-normal;
 $headline-font: $lato-normal;
 
 $colors: (
+  white: (
+    true: #fff,
+  ),
   gray: (
     light: #ddd,
     medium: #b6b6b6,
@@ -25,6 +28,9 @@ $colors: (
     light: #6699ff,
     medium: #3366cc,
     dark: #003399,
+  ),
+  black: (
+    true: #000,
   ),
 );
 

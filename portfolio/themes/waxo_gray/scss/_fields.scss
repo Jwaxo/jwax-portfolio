@@ -4,17 +4,27 @@
 
 .hero {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: map-get($heights, hero);
+
+  @include size-desktop() {
+    min-height: map-get($heights, hero);
+  }
 }
 
-.hero--title {
+.hero-inner {
   color: palette($colors, gray, light);
+  text-align: center;
   z-index: 1;
 }
 
-.hero--image {
+.hero-title {
+  font-size: 84px;
+  margin: 1rem 0;
+}
+
+.hero-image {
   position: fixed;
   top: 0;
   left: 0;

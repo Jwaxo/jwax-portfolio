@@ -70,7 +70,7 @@
  *   in different view modes.
  */
 #}
-<article{{ attributes.addClass('container-breakout') }}>
+<article{{ attributes }}>
 
   {{ title_prefix }}
   {% if not page %}
@@ -90,7 +90,7 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('container') }}>
+  <div{{ content_attributes }}>
     {{ content }}
   </div>
 
