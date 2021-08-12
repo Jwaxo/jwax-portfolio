@@ -94,4 +94,9 @@ function waxo_gray_preprocess_field(&$variables) {
       $variables['subtitle'] = $subtitle->value;
     }
   }
+
+//  if ($field_name === 'field_media_images') {
+//    $variables['#attached']['library'][] = 'slick-carousel';
+//    $debug = TRUE;
+//  }
 }

@@ -6,10 +6,15 @@ core:
     theme:
       css/app.css:
         minified: true
+      css/slick.css: {}
   js:
+    js/slick.min.js:
+      preprocess: false
+      minified: true
     js/app.js:
       preprocess: false
   # See all in Drupal's `core/core.libraries.yml`
   dependencies:
     - core/drupal
     - core/drupalSettings
+    - core/jquery
