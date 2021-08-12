@@ -29,11 +29,11 @@ body {
   }
 
   h1 {
-    font-size: 60px;
+    font-size: map-get($font-size, billboard);
   }
 
   h2 {
-    font-size: 40px;
+    font-size: map-get($font-size, giant);
   }
 
   strong {
@@ -48,5 +48,20 @@ body {
     &:hover {
       color: palette($colors, blue, light);
     }
+  }
+
+  dt, dd {
+    display: inline-block;
+  }
+
+  dt {
+    font-weight: bold;
+    &:after {
+      content: ': '
+    }
+  }
+
+  dd {
+    margin-left: 0;
   }
 }

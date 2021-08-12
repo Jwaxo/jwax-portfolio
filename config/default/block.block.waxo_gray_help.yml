@@ -11,7 +11,7 @@ _core:
 id: waxo_gray_help
 theme: waxo_gray
 region: disabled
-weight: -2
+weight: -1
 provider: null
 plugin: help_block
 settings:

@@ -25,9 +25,9 @@
  * @see template_preprocess_block()
  */
 #}
-{% set block_classes = [
+{% set block_classes = block_classes|default([])|merge([
   'block',
-] %}
+]) %}
 
 <div{{ attributes.addClass(block_classes) }}>
   {{ title_prefix }}

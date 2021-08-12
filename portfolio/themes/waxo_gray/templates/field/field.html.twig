@@ -38,14 +38,16 @@
 #}
 {%
   set title_classes = [
+    'label',
+    'field-label',
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
 %}
 
-{% set field_classes = [
+{% set field_classes = field_classes|default([])|merge([
   'field',
   'field--' ~ field_name,
-] %}
+]) %}
 
 {% if label_hidden %}
   {% if multiple %}
@@ -61,12 +63,12 @@
   {% endif %}
 {% else %}
   <div{{ attributes.addClass(field_classes) }}>
-    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+    <dt {{ title_attributes.addClass(title_classes) }}>{{ label }}</dt>
     {% if multiple %}
-      <div>
+      <div class="field-items">
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes }}>{{ item.content }}</div>
+      <dd{{ item.attributes.addClass('field-value') }}>{{ item.content }}</dd>
     {% endfor %}
     {% if multiple %}
       </div>

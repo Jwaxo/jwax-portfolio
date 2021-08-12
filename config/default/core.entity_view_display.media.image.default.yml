@@ -1,0 +1,42 @@
+uuid: a8bfb736-bea8-406c-80fe-bbbc4f171f11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - media.type.image
+  module:
+    - imagefield_zoom
+    - text
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_caption:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: large
+      image_zoom_style: mouseover
+      image_touchscreen_compatible: true
+      image_magnify: 1
+      image_fade_duration: 120
+    third_party_settings: {  }
+    type: imagezoom_field_formatter
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

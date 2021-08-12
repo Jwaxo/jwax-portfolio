@@ -20,7 +20,7 @@
 }
 
 .hero-title {
-  font-size: 84px;
+  font-size: map-get($font-size, enormous);
   margin: 1rem 0;
 }
 
