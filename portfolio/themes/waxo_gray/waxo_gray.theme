@@ -55,13 +55,14 @@ function waxo_gray_preprocess_node(&$variables) {
  * Implements template_preprocess_block().
  */
 function waxo_gray_preprocess_block(&$variables) {
-  if (isset($variables['content']['#title'])) {
-    if (!isset($variables['title_attributes']['id'])) {
+  // Give the block an ID so we can link directly to it.
+  if (!isset($variables['title_attributes']['id'])) {
+    if (isset($variables['content']['#title'])) {
       $variables['title_attributes']['id'] = Html::cleanCSSIdentifier($variables['content']['#title']);
     }
-  }
-  elseif (isset($variables['content']['#display_id'])) {
-    $variables['title_attributes']['id'] = $variables['content']['#display_id'];
+    elseif (isset($variables['content']['#display_id'])) {
+      $variables['title_attributes']['id'] = $variables['content']['#display_id'];
+    }
   }
 }
 
@@ -94,9 +95,4 @@ function waxo_gray_preprocess_field(&$variables) {
       $variables['subtitle'] = $subtitle->value;
     }
   }
-
-//  if ($field_name === 'field_media_images') {
-//    $variables['#attached']['library'][] = 'slick-carousel';
-//    $debug = TRUE;
-//  }
 }

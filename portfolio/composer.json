@@ -36,6 +36,7 @@
         "drupal/core-vendor-hardening": "^8.8",
         "drupal/imagefieldzoom": "^1.0",
         "drupal/layout_builder_modal": "^1.1",
+        "drupal/pathauto": "^1.8",
         "drush/drush": "^10.4",
         "jackmoore/zoom": "^1.7"
     },
