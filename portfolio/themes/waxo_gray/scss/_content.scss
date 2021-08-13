@@ -46,6 +46,10 @@
     font-size: map-get($font-size, huge);
     text-decoration: none;
     text-shadow: 0 0 5px palette($colors, black, true);
+
+    &:hover {
+      color: palette($colors, green, light);
+    }
   }
 }
 
