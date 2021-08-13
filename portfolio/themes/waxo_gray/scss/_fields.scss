@@ -25,10 +25,26 @@
 }
 
 .hero-image {
+  background-attachment: fixed;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
   z-index: -999;
+}
+
+.footer-image {
+  background-attachment: fixed;
+  position: relative;
+  height: map-get($heights, footer-image);
+  &:before {
+    background: linear-gradient(palette($layout-colors, main, bg), rgba(0,0,0,0));
+    content: '';
+    display: block;
+    height: map-get($heights, footer-image);
+    width: 100%;
+    z-index: 10;
+  }
+
 }
