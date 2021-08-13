@@ -3,7 +3,7 @@
  */
 
 header {
-  background-color: palette($colors, gray, medium);
+  background-color: palette($layout-colors, header, bg);
 }
 
 main {
@@ -12,7 +12,7 @@ main {
 }
 
 footer {
-  background-color: palette($colors, gray, dark);
+  background-color: palette($layout-colors, footer, bg);
   color: palette($colors, white, true);
   overflow: hidden;
 
@@ -51,7 +51,7 @@ footer {
 }
 
 .layout {
-  background-color: palette($colors, gray, light);
+  background-color: palette($layout-colors, main, bg);
 }
 
 .layout-content {

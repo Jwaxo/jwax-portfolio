@@ -79,6 +79,10 @@
         </aside>
       {% endif %}
     </div>
+    {% if footer_image %}
+      <div class="footer-image container-breakout" style="background-image: url({{ footer_image.url }});">
+      </div>
+    {% endif %}
   </main>
 
   {% if page.footer_first or page.footer_second %}

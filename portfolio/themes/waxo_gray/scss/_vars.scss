@@ -10,6 +10,7 @@ $main-gutter: 20px;
 
 $heights: (
   hero: 600px,
+  footer-image: 400px,
 );
 
 $font-size: (
@@ -46,6 +47,18 @@ $colors: (
   ),
   black: (
     true: #000,
+  ),
+);
+
+$layout-colors: (
+  header: (
+    bg: palette($colors, gray, medium)
+  ),
+  main: (
+    bg: palette($colors, gray, light),
+  ),
+  footer: (
+    bg: palette($colors, gray, dark),
   ),
 );
 
