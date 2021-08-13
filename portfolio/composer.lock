@@ -1688,16 +1688,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.15",
+            "version": "8.9.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "4804cb039c1e21f841dc4eccb24dc4a90c8280c6"
+                "reference": "e536176c45d9d75ec57f7a12c0e3c0aead856841"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/4804cb039c1e21f841dc4eccb24dc4a90c8280c6",
-                "reference": "4804cb039c1e21f841dc4eccb24dc4a90c8280c6",
+                "url": "https://api.github.com/repos/drupal/core/zipball/e536176c45d9d75ec57f7a12c0e3c0aead856841",
+                "reference": "e536176c45d9d75ec57f7a12c0e3c0aead856841",
                 "shasum": ""
             },
             "require": {
@@ -1724,7 +1724,7 @@
                 "laminas/laminas-diactoros": "^1.8",
                 "laminas/laminas-feed": "^2.12",
                 "masterminds/html5": "^2.1",
-                "pear/archive_tar": "^1.4.12",
+                "pear/archive_tar": "^1.4.14",
                 "php": "^7.0.8",
                 "psr/log": "^1.0",
                 "stack/builder": "^1.0",
@@ -1915,11 +1915,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2021-05-05T11:28:48+00:00"
+            "time": "2021-08-12T17:48:42+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "8.9.15",
+            "version": "8.9.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1966,7 +1966,7 @@
         },
         {
             "name": "drupal/core-project-message",
-            "version": "8.9.15",
+            "version": "8.9.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -2004,16 +2004,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "8.9.15",
+            "version": "8.9.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "eb09bb8097d63ef7fb44d8a464dc84eb9af5141f"
+                "reference": "71839bb9799b70f449b76294b461877ba1e9ff2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/eb09bb8097d63ef7fb44d8a464dc84eb9af5141f",
-                "reference": "eb09bb8097d63ef7fb44d8a464dc84eb9af5141f",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/71839bb9799b70f449b76294b461877ba1e9ff2c",
+                "reference": "71839bb9799b70f449b76294b461877ba1e9ff2c",
                 "shasum": ""
             },
             "require": {
@@ -2025,7 +2025,7 @@
                 "doctrine/common": "v2.7.3",
                 "doctrine/inflector": "v1.2.0",
                 "doctrine/lexer": "1.0.2",
-                "drupal/core": "8.9.15",
+                "drupal/core": "8.9.18",
                 "easyrdf/easyrdf": "0.9.1",
                 "egulias/email-validator": "2.1.17",
                 "guzzlehttp/guzzle": "6.5.4",
@@ -2038,7 +2038,7 @@
                 "laminas/laminas-zendframework-bridge": "1.0.4",
                 "masterminds/html5": "2.3.0",
                 "paragonie/random_compat": "v9.99.99",
-                "pear/archive_tar": "1.4.13",
+                "pear/archive_tar": "1.4.14",
                 "pear/console_getopt": "v1.4.3",
                 "pear/pear-core-minimal": "v1.10.10",
                 "pear/pear_exception": "v1.0.1",
@@ -2082,11 +2082,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "time": "2021-05-05T11:28:48+00:00"
+            "time": "2021-08-12T17:48:42+00:00"
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "8.9.15",
+            "version": "8.9.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
@@ -3650,16 +3650,16 @@
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.13",
+            "version": "1.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011"
+                "reference": "4d761c5334c790e45ef3245f0864b8955c562caa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/2b87b41178cc6d4ad3cba678a46a1cae49786011",
-                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/4d761c5334c790e45ef3245f0864b8955c562caa",
+                "reference": "4d761c5334c790e45ef3245f0864b8955c562caa",
                 "shasum": ""
             },
             "require": {
@@ -3712,7 +3712,7 @@
                 "archive",
                 "tar"
             ],
-            "time": "2021-02-16T10:50:50+00:00"
+            "time": "2021-07-20T13:53:39+00:00"
         },
         {
             "name": "pear/console_getopt",

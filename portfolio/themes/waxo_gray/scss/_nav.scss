@@ -30,10 +30,10 @@ header ul.menu li {
   a:visited,
   a:active {
     color: palette($colors, gray, dark);
-  }
-  a:hover {
-    color: palette($colors, blue, dark);
-    text-decoration: underline;
+    &:hover {
+      color: palette($colors, green, medium);
+      text-decoration: underline;
+    }
   }
 }
 

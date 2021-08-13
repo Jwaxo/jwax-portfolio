@@ -43,10 +43,10 @@ body {
   a,
   a:visited,
   a:active {
-    color: palette($colors, blue, medium);
+    color: palette($colors, green, medium);
 
     &:hover {
-      color: palette($colors, blue, light);
+      color: palette($colors, green, light);
     }
   }
 
